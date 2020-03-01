@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--font sizes-->
+    <dimen name="dimen_textYNButton">32sp</dimen>
+    <dimen name="dimen_textLargeButton">30sp</dimen>
+    <dimen name="dimen_textHeading">26sp</dimen>
+    <dimen name="dimen_textStatementLarge">24sp</dimen>
+    <dimen name="dimen_textStatement">22sp</dimen>
+    <dimen name="dimen_textButtonInstructions">20sp</dimen>
+    <dimen name="dimen_textLarge">20sp</dimen>
+    <dimen name="dimen_textSubheading">18sp</dimen>
+    <dimen name="dimen_textBody">16sp</dimen>
+    <dimen name="dimen_breadcrumbNumbers">12sp</dimen>
+
+
+    <!--object sizes-->
+    <dimen name="dimen_buttonHeight">59dp</dimen>
+
+    <dimen name="dimen_filledButtonHeight">53dp</dimen>
+    <dimen name="dimen_filledButtonWidth">142dp</dimen>
+
+    <dimen name="dimen_categoryButtonHeight">71dp</dimen>
+
+    <dimen name="dimen_toolbarHeight">108dp</dimen>
+
+    <dimen name="dimen_edt_input_height">50dp</dimen>
+    <dimen name="dimen_edt_input_width">306dp</dimen>
+
+    <dimen name="dimen_smallEdt_height">50dp</dimen>
+    <dimen name="dimen_smallEdt_width">90dp</dimen>
+
+    <dimen name="dimen_iconCamera">77dp</dimen>
+    <dimen name="dimen_iconSwitchCameraHeight">34dp</dimen>
+    <dimen name="dimen_iconSwitchCameraWidth">45dp</dimen>
+    <dimen name="dimen_circlePicture">255dp</dimen>
+
+    <dimen name="dimen_hamburgerHeight">25dp</dimen>
+    <dimen name="dimen_hamburgerWidth">16dp</dimen>
+
+    <dimen name="dimen_iconAdd">95dp</dimen>
+
+    <dimen name="dimen_editTextElevation">6dp</dimen>
+</resources>

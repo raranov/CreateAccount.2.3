@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fragmentBackground"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/breadcrumbBackgroundLine"
+            android:layout_width="65dp"
+            android:layout_height="4dip"
+            android:layout_marginTop="21dp"
+            android:background="@color/color_neutral"
+            android:paddingBottom="10dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imgBreadcrumb1"
+            style="@style/style_breadcrumbNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/breadcrumb_circle"
+            android:text="1"
+            app:layout_constraintBottom_toBottomOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintStart_toStartOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
+
+        <TextView
+            android:id="@+id/imgBreadcrumb2"
+            style="@style/style_breadcrumbNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/breadcrumb_circle_highlighted"
+            android:text="2"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintEnd_toStartOf="@+id/imgBreadcrumb3"
+            app:layout_constraintStart_toEndOf="@+id/imgBreadcrumb1"
+            app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
+
+        <TextView
+            android:id="@+id/imgBreadcrumb3"
+            style="@style/style_breadcrumbNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/breadcrumb_circle"
+            android:text="3"
+            app:layout_constraintBottom_toBottomOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintEnd_toEndOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            style="@style/style_smallPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="44dp"
+            android:text="@string/txtEmail"
+            app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_input_rectangle"
+            android:cursorVisible="true"
+            android:elevation="@dimen/dimen_editTextElevation"
+            android:focusableInTouchMode="true"
+            android:hint="@string/edtEmailHint"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/cursor"
+            app:layout_constraintBottom_toTopOf="@+id/txtConfirmEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+        <TextView
+            android:id="@+id/txtConfirmEmail"
+            style="@style/style_smallPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/txtConfirmEmail"
+            app:layout_constraintBottom_toTopOf="@+id/edtConfirmEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+        <EditText
+            android:id="@+id/edtConfirmEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_input_rectangle"
+            android:cursorVisible="true"
+            android:elevation="@dimen/dimen_editTextElevation"
+            android:focusableInTouchMode="true"
+            android:hint="@string/edtConfirmEmailHint"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/cursor"
+            android:windowSoftInputMode="adjustResize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtConfirmEmail" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_buttonHeight"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/btnContinue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_buttonHeight"
+            android:background="@drawable/button_rectangle"
+            android:text="@string/btnBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnContinue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

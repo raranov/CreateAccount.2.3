@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CreateAccount(2.3)</string>
+
+    <string name="btnContinue">Continue</string>
+    <string name="btnBack">Back</string>
+
+    <!--CREATE ACCOUNT-->
+    <string name="txtCreateAccount">Create Account</string>
+    <string name="txtAccountSubheading">Fill in the info below</string>
+
+    <string name="txtFirstName">First Name</string>
+    <string name="edtFirstNameHint">Type your first name</string>
+    <string name="txtLastName">Last Name</string>
+    <string name="edtLastNameHint">Type your last name</string>
+    <string name="rdbMale">Male</string>
+    <string name="rdbFemale">Female</string>
+    <string name="rdbInstructions">(Tap to choose)</string>
+
+    <string name="txtEmail">Email Address</string>
+    <string name="edtEmailHint">Type your email</string>
+    <string name="txtConfirmEmail">Confirm email address</string>
+    <string name="edtConfirmEmailHint">Re-type your email</string>
+
+    <string name="txtPassword">Password</string>
+    <string name="txtPasswordRequirements">(Minimum of 6 Characters 1 number)</string>
+    <string name="edtPasswordHint">Type your Password</string>
+    <string name="txtConfirmPassword">Confirm Password</string>
+    <string name="edtConfirmPasswordHint">Re-type your Password</string>
+</resources>

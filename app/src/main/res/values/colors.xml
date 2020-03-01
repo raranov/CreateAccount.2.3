@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#D17515</color>
+
+    <color name="color_primary">#D17515</color>
+    <color name="color_onPrimary">#FFFFFF</color>
+    <color name="color_accent">#0B0B0B</color>
+
+    <color name="color_textLight">#2E072566</color>
+
+    <color name="color_fragmentBackground">@color/color_onPrimary</color>
+
+    <color name="color_neutral">#707070</color>
+
+    <color name="color_white">@color/color_onPrimary</color>
+
+
+</resources>

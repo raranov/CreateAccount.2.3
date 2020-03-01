@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="style_Heading">
+        <item name="android:textColor">@color/color_onPrimary</item>
+        <item name="android:fontFamily">@font/font_medium</item>
+        <item name="android:textSize">@dimen/dimen_textHeading</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="style_Heading2">
+        <item name="android:textColor">@color/color_accent</item>
+        <item name="android:fontFamily">@font/font_bold</item>
+        <item name="android:textSize">@dimen/dimen_textHeading</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="style_Subheading">
+        <item name="android:textColor">@color/color_onPrimary</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/dimen_textSubheading</item>
+    </style>
+
+    <style name="style_smallPrompt">
+        <item name="android:textColor">@color/color_accent</item>
+        <item name="android:fontFamily">@font/font_medium</item>
+        <item name="android:textSize">@dimen/dimen_textSubheading</item>
+        <item name="android:autoSizeTextType">uniform</item>
+    </style>
+
+    <style name="style_buttonText">
+        <item name="android:textColor">@color/color_accent</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textSize">@dimen/dimen_textLarge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="style_breadcrumbNumbers">
+        <item name="android:textColor">@color/color_accent</item>
+        <item name="android:fontFamily">@font/font_bold</item>
+        <item name="android:textSize">@dimen/dimen_breadcrumbNumbers</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
