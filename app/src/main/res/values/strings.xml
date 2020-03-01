@@ -16,12 +16,12 @@
     <string name="rdbFemale">Female</string>
     <string name="rdbInstructions">(Tap to choose)</string>
 
-    <string name="txtEmail">Email Address</string>
+    <string name="txtEmail">[firstName], enter your email address</string>
     <string name="edtEmailHint">Type your email</string>
     <string name="txtConfirmEmail">Confirm email address</string>
     <string name="edtConfirmEmailHint">Re-type your email</string>
 
-    <string name="txtPassword">Password</string>
+    <string name="txtPassword">[firstName], choose a password</string>
     <string name="txtPasswordRequirements">(Minimum of 6 Characters 1 number)</string>
     <string name="edtPasswordHint">Type your Password</string>
     <string name="txtConfirmPassword">Confirm Password</string>
