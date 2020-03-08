@@ -75,7 +75,7 @@
             android:layout_height="@dimen/dimen_filledButtonHeight"
             android:layout_marginStart="25dp"
             android:layout_marginTop="11dp"
-            android:background="@drawable/button_outlined"
+            android:background="@drawable/button_rectangle"
             android:text="Yes"
             android:gravity="center"
             app:layout_constraintEnd_toStartOf="@+id/btnNo"

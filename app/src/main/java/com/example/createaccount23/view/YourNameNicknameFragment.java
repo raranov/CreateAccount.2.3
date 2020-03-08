@@ -58,7 +58,7 @@ public class YourNameNicknameFragment extends Fragment {
             public void onClick(View view) {
                 // User feedback
                 binding.btnYes.setBackgroundResource(R.drawable.button_rectangle);
-                binding.btnYes.setTextColor(getResources().getColor(R.color.color_onPrimary));
+                //binding.btnYes.setTextColor(getResources().getColor(R.color.color_onPrimary));
                 binding.btnYes.setTextSize(38);
 
                 binding.btnNo.setBackgroundResource(R.drawable.button_rectangle); //todo can wrap in if statement to see if is highlighted to begin with
@@ -75,7 +75,7 @@ public class YourNameNicknameFragment extends Fragment {
         binding.btnYes.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                binding.btnYes.setTextColor(getResources().getColor(R.color.color_onPrimary));
+                //binding.btnYes.setTextColor(getResources().getColor(R.color.color_onPrimary));
                 binding.btnNo.setTextColor(getResources().getColor(R.color.color_accent));
                 binding.btnNo.setBackground(getResources().getDrawable(R.drawable.button_rectangle));
 
@@ -89,7 +89,7 @@ public class YourNameNicknameFragment extends Fragment {
             public void onClick(View view) {
                 // User feedback
                 binding.btnNo.setBackgroundResource(R.drawable.button_rectangle);
-                binding.btnNo.setTextColor(getResources().getColor(R.color.color_onPrimary));
+                //binding.btnNo.setTextColor(getResources().getColor(R.color.color_onPrimary));
 
                 binding.btnYes.setBackgroundResource(R.drawable.button_rectangle); //todo can wrap in if statement to see if is highlighted to begin with
                 binding.btnYes.setTextColor(getResources().getColor(R.color.color_accent));
@@ -104,7 +104,7 @@ public class YourNameNicknameFragment extends Fragment {
         binding.btnNo.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                binding.btnNo.setTextColor(getResources().getColor(R.color.color_onPrimary));
+               // binding.btnNo.setTextColor(getResources().getColor(R.color.color_onPrimary));
                 binding.btnYes.setTextColor(getResources().getColor(R.color.color_accent));
                 binding.btnYes.setBackground(getResources().getDrawable(R.drawable.button_rectangle));
 
