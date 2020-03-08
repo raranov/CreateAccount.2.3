@@ -1,36 +1,32 @@
 package com.example.createaccount23.view;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.viewpager.widget.ViewPager;
 
+import android.os.Bundle;
+
 import com.example.createaccount23.R;
-import com.example.createaccount23.databinding.ActivityCreateAccountBinding;
-import com.example.createaccount23.model.User;
+import com.example.createaccount23.databinding.ActivityYourNameBinding;
 import com.example.createaccount23.utils.FragmentAdapter;
 import com.example.createaccount23.utils.NonSwipeableViewPager;
-import com.example.createaccount23.viewmodel.CreateAccountVM;
 
 import java.util.Stack;
 
-//todo hamburger menu (change from spinner), use large area hamburger png
-public class CreateAccount extends AppCompatActivity {
+//todo hamburger, back, skip, continue
+public class YourName extends AppCompatActivity {
     private NonSwipeableViewPager viewPager;
-    User newUser = new User();
     Stack<Integer> pageHistory;
     int currentPage;
     boolean saveToHistory;
-    CreateAccountVM viewmodel = new CreateAccountVM();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final ActivityCreateAccountBinding binding =
-                DataBindingUtil.setContentView(this, R.layout.activity_create_account);
-        viewPager = binding.vpCreateAccount;
-        setupViewPager(binding.vpCreateAccount);
+        final ActivityYourNameBinding binding =
+                DataBindingUtil.setContentView(this, R.layout.activity_your_name);
+        viewPager = binding.vpYourName;
+        setupViewPager(binding.vpYourName);
 
         pageHistory = new Stack<>();
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -54,11 +50,11 @@ public class CreateAccount extends AppCompatActivity {
         saveToHistory = true;
     }
 
-    private void setupViewPager(ViewPager viewPager){
+    private void setupViewPager(NonSwipeableViewPager viewPager){
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CreateAccount1Fragment(), "CreateAccountName");
-        adapter.addFragment(new CreateAccount2Fragment(), "CreateAccountEmail");
-        adapter.addFragment(new CreateAccount3Fragment(), "CreateAccountPassword");
+        adapter.addFragment(new YourNameMiddleFragment(), "YourNameMiddleFragment");
+        adapter.addFragment(new YourNameNicknameFragment(), "YourNameNicknameFragment");
+        adapter.addFragment(new YourNameReferenceFragment(), "YourNameReferenceFragment");
         viewPager.setAdapter(adapter);
     }
 
@@ -82,6 +78,5 @@ public class CreateAccount extends AppCompatActivity {
             saveToHistory = true;
         }
 
-}
-
+    }
 }

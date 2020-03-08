@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fragmentBackground">
+
+        <View
+            android:id="@+id/breadcrumbBackgroundLine"
+            android:layout_width="65dp"
+            android:layout_height="4dip"
+            android:layout_marginTop="21dp"
+            android:background="@color/color_neutral"
+            android:paddingBottom="10dip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imgBreadcrumb1"
+            style="@style/style_breadcrumbNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/breadcrumb_circle"
+            android:text="1"
+            app:layout_constraintBottom_toBottomOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintStart_toStartOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
+
+        <TextView
+            android:id="@+id/imgBreadcrumb2"
+            style="@style/style_breadcrumbNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/breadcrumb_circle"
+            android:text="2"
+            app:layout_constraintBottom_toBottomOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintEnd_toStartOf="@+id/imgBreadcrumb3"
+            app:layout_constraintStart_toEndOf="@+id/imgBreadcrumb1"
+            app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
+
+        <TextView
+            android:id="@+id/imgBreadcrumb3"
+            style="@style/style_breadcrumbNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/breadcrumb_circle_highlighted"
+            android:textColor="@android:color/white"
+            android:text="3"
+            app:layout_constraintBottom_toBottomOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintEnd_toEndOf="@+id/breadcrumbBackgroundLine"
+            app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
+
+        <TextView
+            android:id="@+id/txtReferencePrompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="27dp"
+            android:gravity="start"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edtReference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/edt_input_rectangle"
+            android:elevation="6dp"
+            android:ems="10"
+            android:hint="Type your name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtReferencePrompt" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:background="@drawable/button_rectangle"
+            android:shadowColor="@color/color_accent"
+            android:text="@string/btnBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSkip"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:background="@drawable/button_rectangle"
+            android:shadowColor="@color/color_accent"
+            android:text="Skip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnContinue"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:background="@drawable/button_rectangle"
+            android:cursorVisible="true"
+            android:shadowColor="@color/color_accent"
+            android:text="@string/btnContinue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSkip" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

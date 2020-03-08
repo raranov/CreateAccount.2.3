@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_fragmentBackground"
-        android:orientation="vertical">
+        android:background="@color/color_fragmentBackground">
 
         <View
             android:id="@+id/breadcrumbBackgroundLine"
@@ -55,93 +54,107 @@
             app:layout_constraintTop_toTopOf="@+id/breadcrumbBackgroundLine" />
 
         <TextView
-            android:id="@+id/txtEmail"
-            style="@style/style_smallPrompt"
-            android:layout_width="wrap_content"
+            android:id="@+id/txtNicknamePrompt"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="44dp"
-            android:text="@string/txtEmail"
-            app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="27dp"
+            android:gravity="start"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/edtEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edt_input_rectangle"
-            android:cursorVisible="true"
-            android:elevation="@dimen/dimen_editTextElevation"
-            android:focusableInTouchMode="true"
-            android:hint="@string/edtEmailHint"
-            android:imeOptions="actionNext"
-            android:inputType="textEmailAddress"
-            android:paddingStart="18dp"
-            android:textColorHint="@android:color/darker_gray"
-            android:textCursorDrawable="@drawable/cursor"
-            app:layout_constraintBottom_toTopOf="@+id/txtConfirmEmail"
+        <Button
+            android:id="@+id/btnYes"
+            style="@style/style_buttonText"
+            android:textSize="@dimen/dimen_textYNButton"
+            android:layout_width="@dimen/dimen_filledButtonWidth"
+            android:layout_height="@dimen/dimen_filledButtonHeight"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/button_rectangle"
+            android:text="Yes"
+            app:layout_constraintEnd_toStartOf="@+id/btnNo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
-
-        <TextView
-            android:id="@+id/txtConfirmEmail"
-            style="@style/style_smallPrompt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="17dp"
-            android:text="@string/txtConfirmEmail"
-            app:layout_constraintBottom_toTopOf="@+id/edtConfirmEmail"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
-
-        <EditText
-            android:id="@+id/edtConfirmEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/edt_input_rectangle"
-            android:cursorVisible="true"
-            android:elevation="@dimen/dimen_editTextElevation"
-            android:focusableInTouchMode="true"
-            android:hint="@string/edtConfirmEmailHint"
-            android:imeOptions="actionNext"
-            android:inputType="textEmailAddress"
-            android:paddingStart="18dp"
-            android:textColorHint="@android:color/darker_gray"
-            android:textCursorDrawable="@drawable/cursor"
-            android:windowSoftInputMode="adjustResize"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtConfirmEmail" />
+            app:layout_constraintTop_toBottomOf="@+id/txtNicknamePrompt" />
 
         <Button
-            android:id="@+id/btnContinue"
+            android:id="@+id/btnNo"
             style="@style/style_buttonText"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/dimen_buttonHeight"
+            android:textSize="@dimen/dimen_textYNButton"
+            android:layout_width="@dimen/dimen_filledButtonWidth"
+            android:layout_height="@dimen/dimen_filledButtonHeight"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="25dp"
             android:background="@drawable/button_rectangle"
-            android:text="@string/btnContinue"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnBack" />
+            app:layout_constraintStart_toEndOf="@+id/btnYes"
+            app:layout_constraintTop_toBottomOf="@+id/txtNicknamePrompt" />
+
+        <EditText
+            android:id="@+id/edtNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/edt_input_rectangle"
+            android:elevation="6dp"
+            android:ems="10"
+            android:hint="Enter your nickname"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnYes" />
 
         <Button
             android:id="@+id/btnBack"
             style="@style/style_buttonText"
             android:layout_width="0dp"
-            android:layout_height="@dimen/dimen_buttonHeight"
+            android:layout_height="59dp"
             android:background="@drawable/button_rectangle"
+            android:shadowColor="@color/color_accent"
             android:text="@string/btnBack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSkip"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:background="@drawable/button_rectangle"
+            android:shadowColor="@color/color_accent"
+            android:text="Skip"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnContinue"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/btnBack" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/style_buttonText"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:background="@drawable/button_rectangle"
+            android:cursorVisible="true"
+            android:shadowColor="@color/color_accent"
+            android:text="@string/btnContinue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSkip" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
