@@ -1,18 +1,17 @@
-package com.example.createaccount23.repository;
+package com.itismyexperience.app.repository;
 
 import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.createaccount23.model.JsonKeyValuePair;
-import com.example.createaccount23.model.User;
-import com.example.createaccount23.network.APIInterface;
-import com.example.createaccount23.utils.UserCallbacks;
+import com.itismyexperience.app.model.JsonKeyValuePair;
+import com.itismyexperience.app.model.User;
+import com.itismyexperience.app.network.APIInterface;
+import com.itismyexperience.app.utils.UserCallbacks;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 

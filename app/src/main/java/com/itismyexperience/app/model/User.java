@@ -1,4 +1,4 @@
-package com.example.createaccount23.model;
+package com.itismyexperience.app.model;
 
 import com.google.gson.annotations.SerializedName;
 

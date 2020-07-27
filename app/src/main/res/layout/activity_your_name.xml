@@ -41,7 +41,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtPrompt" />
 
-        <com.example.createaccount23.utils.NonSwipeableViewPager
+        <com.itismyexperience.app.utils.NonSwipeableViewPager
             android:id="@+id/vpYourName"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -51,7 +51,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtSubheading">
 
-        </com.example.createaccount23.utils.NonSwipeableViewPager>
+        </com.itismyexperience.app.utils.NonSwipeableViewPager>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

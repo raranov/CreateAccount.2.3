@@ -1,4 +1,4 @@
-package com.example.createaccount23.view;
+package com.itismyexperience.app.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -6,10 +6,10 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
-import com.example.createaccount23.R;
-import com.example.createaccount23.databinding.ActivityYourNameBinding;
-import com.example.createaccount23.utils.FragmentAdapter;
-import com.example.createaccount23.utils.NonSwipeableViewPager;
+import com.itismyexperience.app.R;
+import com.itismyexperience.app.databinding.ActivityYourNameBinding;
+import com.itismyexperience.app.utils.FragmentAdapter;
+import com.itismyexperience.app.utils.NonSwipeableViewPager;
 
 import java.util.Stack;
 

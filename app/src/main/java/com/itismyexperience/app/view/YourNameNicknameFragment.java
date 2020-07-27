@@ -1,4 +1,4 @@
-package com.example.createaccount23.view;
+package com.itismyexperience.app.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,11 +24,11 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 
-import com.example.createaccount23.R;
-import com.example.createaccount23.databinding.FragmentYournameNicknameBinding;
-import com.example.createaccount23.utils.NonSwipeableViewPager;
-import com.example.createaccount23.utils.SharedPreferencesUtils;
-import com.example.createaccount23.viewmodel.YourName.YourNameNicknameVM;
+import com.itismyexperience.app.R;
+import com.itismyexperience.app.databinding.FragmentYournameNicknameBinding;
+import com.itismyexperience.app.utils.NonSwipeableViewPager;
+import com.itismyexperience.app.utils.SharedPreferencesUtils;
+import com.itismyexperience.app.viewmodel.YourName.YourNameNicknameVM;
 
 public class YourNameNicknameFragment extends Fragment {
     private YourNameNicknameVM viewmodel = new YourNameNicknameVM();

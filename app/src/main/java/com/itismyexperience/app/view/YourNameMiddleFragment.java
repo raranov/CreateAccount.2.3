@@ -1,8 +1,6 @@
-package com.example.createaccount23.view;
+package com.itismyexperience.app.view;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,17 +10,16 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.createaccount23.R;
-import com.example.createaccount23.databinding.FragmentYournameMiddleBinding;
-import com.example.createaccount23.utils.NonSwipeableViewPager;
-import com.example.createaccount23.utils.SharedPreferencesUtils;
-import com.example.createaccount23.viewmodel.YourName.YourNameMiddleVM;
+import com.itismyexperience.app.R;
+import com.itismyexperience.app.databinding.FragmentYournameMiddleBinding;
+import com.itismyexperience.app.utils.NonSwipeableViewPager;
+import com.itismyexperience.app.utils.SharedPreferencesUtils;
+import com.itismyexperience.app.viewmodel.YourName.YourNameMiddleVM;
 
 import java.util.Objects;
 

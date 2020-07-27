@@ -1,18 +1,17 @@
-package com.example.createaccount23.viewmodel.YourName;
+package com.itismyexperience.app.viewmodel.YourName;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.createaccount23.model.JsonKeyValuePair;
-import com.example.createaccount23.model.User;
-import com.example.createaccount23.repository.UserRepository;
-import com.example.createaccount23.utils.Singleton;
-import com.example.createaccount23.utils.UserCallbacks;
+import com.itismyexperience.app.model.JsonKeyValuePair;
+import com.itismyexperience.app.model.User;
+import com.itismyexperience.app.repository.UserRepository;
+import com.itismyexperience.app.utils.Singleton;
+import com.itismyexperience.app.utils.UserCallbacks;
 
-
-public class YourNameMiddleVM extends ViewModel {
+public class YourNameNicknameVM extends ViewModel {
     private UserRepository userRepository;
     private String userID;
 
@@ -28,11 +27,11 @@ public class YourNameMiddleVM extends ViewModel {
         userRepository = UserRepository.getInstance();
     }
 
-    public LiveData<Integer> validateMiddleNameInput(String middlename) {
+    public LiveData<Integer> validateNicknameInput(String nickname) {
         final MutableLiveData<Integer> response = new MutableLiveData<>();
         response.setValue(100);
 
-        if(middlename.isEmpty()){
+        if(nickname.isEmpty()){
             response.setValue(1);
             return response;
         }
@@ -42,16 +41,16 @@ public class YourNameMiddleVM extends ViewModel {
         }
     }
 
-    public LiveData<Integer> updateMiddleName(String middlename){
+    public LiveData<Integer> updateNickname(String nickname){
         if (Singleton.INSTANCE.getCurrentUser().getValue() != null) {
-            Singleton.INSTANCE.getCurrentUser().getValue().setMiddleName(middlename);
+            Singleton.INSTANCE.getCurrentUser().getValue().setNickname(nickname);
         }
 
         final MutableLiveData<Integer> response = new MutableLiveData<>();
         JsonKeyValuePair jsonKeyValuePair = new JsonKeyValuePair();
 
-        jsonKeyValuePair.setField(JsonKeyValuePair.Fields.name_middle);
-        jsonKeyValuePair.setValue(middlename);
+        jsonKeyValuePair.setField(JsonKeyValuePair.Fields.name_nickname);
+        jsonKeyValuePair.setValue(nickname);
 
         userRepository.updateUser(userID, jsonKeyValuePair, new UserCallbacks() {
             @Override

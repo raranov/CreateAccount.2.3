@@ -1,15 +1,15 @@
-package com.example.createaccount23.viewmodel.YourName;
+package com.itismyexperience.app.viewmodel.YourName;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.createaccount23.model.JsonKeyValuePair;
-import com.example.createaccount23.model.User;
-import com.example.createaccount23.repository.UserRepository;
-import com.example.createaccount23.utils.Singleton;
-import com.example.createaccount23.utils.UserCallbacks;
+import com.itismyexperience.app.model.JsonKeyValuePair;
+import com.itismyexperience.app.model.User;
+import com.itismyexperience.app.repository.UserRepository;
+import com.itismyexperience.app.utils.Singleton;
+import com.itismyexperience.app.utils.UserCallbacks;
 
 
 public class YourNameReferenceVM extends ViewModel {
